@@ -1,0 +1,21 @@
+<!-- <form action="/restaurants" method="post">
+  <label for="name">Name</label>
+  <input type="text" name="restaurants[name]">
+  <label for="name">Address</label>
+  <input type="text" name="restaurants[address]">
+  <label for="name">Chef name</label>
+  <input type="text" name="restaurants[chef_name]">
+  <label for="name">Rating</label>
+  <input type="text" name="restaurants[rating]">
+  <input type="submit">
+</form> -->
+
+<%= form_for @restaurant do |f| %>
+
+  <%= f.text_field :name %>
+  <%= f.text_field :address %>
+  <%= f.text_field :chef_name %>
+  <%= f.text_field :rating %>
+  <%= f.submit %>
+
+<% end %>

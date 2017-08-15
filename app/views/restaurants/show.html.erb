@@ -1,0 +1,7 @@
+  <h3><%= @restaurant.name %></h3>
+  <h5><%= @restaurant.chef_name %></h5>
+  <p><%= @restaurant.address %></p>
+  <p><%= '*' * @restaurant.rating %></p>
+
+  <%= link_to 'Back to all restaurants', restaurants_path %>
+  <%= link_to 'Destroy this restaurant', restaurant_path(@restaurant), method: :delete %>

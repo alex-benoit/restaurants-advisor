@@ -1,0 +1,9 @@
+<h1>All restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <h5><%= restaurant.chef_name %></h5>
+  <p><%= restaurant.address %></p>
+  <p><%= '*' * restaurant.rating %></p>
+  <%= link_to 'Delete restaurant', restaurant_path(restaurant), method: :delete %>
+<% end %>
